@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #9aa2ac;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main .center {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.main .center span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: black;
+  -webkit-animation: load 1.9s linear infinite;
+          animation: load 1.9s linear infinite;
+}
+
+.main .center span:nth-child(2) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+
+.main .center span:nth-child(3) {
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+}
+
+.main .center span:nth-child(4) {
+  -webkit-animation-delay: 1.37s;
+          animation-delay: 1.37s;
+}
+
+@-webkit-keyframes load {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  12.5% {
+    top: 0;
+    left: 50%;
+  }
+  25% {
+    right: 0;
+    top: 50%;
+  }
+  37.5% {
+    top: 50%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  62.5% {
+    left: 0;
+    top: 50%;
+  }
+  75% {
+    left: 0;
+    top: 50%;
+  }
+  87.5% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  12.5% {
+    top: 0;
+    left: 50%;
+  }
+  25% {
+    right: 0;
+    top: 50%;
+  }
+  37.5% {
+    top: 50%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  62.5% {
+    left: 0;
+    top: 50%;
+  }
+  75% {
+    left: 0;
+    top: 50%;
+  }
+  87.5% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=hi.css.map */
